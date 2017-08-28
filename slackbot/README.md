@@ -1,6 +1,6 @@
 # Slackbot
 
-Files for the blog post on Medium called Writing a Slack ChatBot in Golang
+Files for the [blog post](https://medium.com/unacastlabs/writing-a-slack-chatbot-in-golang-31758cba86fe) on Medium called Writing a Slack ChatBot in Golang
 
 ## Requirements
 
