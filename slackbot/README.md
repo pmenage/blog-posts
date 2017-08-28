@@ -5,7 +5,7 @@ Files for the [blog post](https://medium.com/unacastlabs/writing-a-slack-chatbot
 ## Requirements
 
 - Have Go installed
-- API_TOKEN for Slack Bot (Create an app [here](https://api.slack.com/apps))
+- `API_TOKEN` for Slack Bot (Create an app [here](https://api.slack.com/apps))
 
 ## Install and run
 
