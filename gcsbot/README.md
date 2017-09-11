@@ -1,4 +1,4 @@
-# Create a GCS bucket
+# Creating a GCS bucket with a Golang Slack bot
 
 Files for the [blog post](https://medium.com/unacastlabs/writing-a-slack-chatbot-in-golang-31758cba86fe) on Medium called Creating GCS buckets with Slack bots in Go
 
