@@ -2,6 +2,7 @@ package pbs
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 
 	"cloud.google.com/go/pubsub"
@@ -78,9 +79,9 @@ func ReceiveAndSend(ctx context.Context, slackAPIKey string) {
 		})
 		switch message.Event {
 		case "GCS_BUCKET_CREATED":
-			api.PostMessage(string(message.Channel), "Bucket created for "+message.Bucket, slack.PostMessageParameters{})
+			api.PostMessage(string(message.Channel), fmt.Sprintf("Bucket %v created", message.Bucket), slack.PostMessageParameters{})
 		case "GCS_BUCKET_CREATION_FAILED":
-			api.PostMessage(string(message.Channel), "Bucket not created for "+message.Bucket, slack.PostMessageParameters{})
+			api.PostMessage(string(message.Channel), fmt.Sprintf("Bucket %v not created", message.Bucket), slack.PostMessageParameters{})
 		}
 	}
 }
